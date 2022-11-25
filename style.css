@@ -1,0 +1,1379 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+    font-family:  'Alexandria', sans-serif;
+    }
+
+*::selection{
+    background-color: #c71d6fef;
+    color: whitesmoke;
+}
+
+.cont{
+    text-align: center;
+} 
+
+/* -------------------------------------------------------------------------------------------------------------------MENU -------------------------------------------------------------------------------------------------------------------*/
+.nav{
+    background-color: #c71d6f88;
+}
+.logo{
+    height:96%;
+}
+
+
+.etiquetas{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li{
+
+    border-radius: 20%;
+    padding-top: 1.5%;
+    align-self: center;
+    list-style-type: none;
+    text-align:center;
+}
+
+.nav a{
+    text-decoration: none;
+    color :whitesmoke;
+    width: 80%;
+}
+/*-------------------------------------------------------------------------------------------------------------------Cuerpo-------------------------------------------------------------------------------------------------------------------*/
+
+.log_cuer{
+    max-width: 5%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------Presentación---------------------------------------------------------------------------------------------------------------------Tratamientos-------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------PRESENTACION*/
+
+.desPres button{
+    height: 3rem;
+    width: 8rem;
+    margin-top: 2%;
+    border-radius: 20px;
+    margin: 4%;
+}
+
+/*--------------------------------------------------------------------TRATAMIENTOS DESTACADOS*/
+.tratamientos{
+    color: #c71d6f;
+}
+
+.destacados h1{
+    padding-bottom: 2%;
+    text-decoration: underline;
+}
+.destacados p{
+    font-size:1.4rem ;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.destc_btn{
+    margin-top: 3%;
+}
+
+.destc_btn button{
+    border-radius:20px;
+    width: 13%;
+    background-color: #dfa6a3;
+    color: whitesmoke;
+}
+
+.log_cuer{
+    margin: 2% auto;
+}
+
+
+
+
+/*--------------------------------------------------------------- Trat. Principal*/
+.pres{
+    background-image: url("/Img/espalda.jpg");
+    background-size: 100vw 30rem;
+    background-repeat: no-repeat;
+    height: 30rem;
+    
+    color: whitesmoke;
+
+}
+
+.pres hr{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.img{
+    height: 8rem;
+    width: 9rem;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+.tratQui,.tratNoQui{
+    text-align: center;
+    justify-items: center;
+    
+}
+
+.trat{
+    display: grid;
+    width: 12rem;
+}
+
+
+/*-------------------------------------------------------------------------Especialista------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------Inicio*/
+
+.descr{
+    color: #c71d6f;
+}
+
+.desPres hr{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.descr p{
+    font-size:1.5rem ;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.especialista{
+    color: black;
+}
+
+
+.especialista h1{
+    text-decoration:underline;
+    margin-bottom: 2%;
+    color: black;
+}
+.especialista li{
+    font-size: 1.5rem;
+    color:#c71d6f;
+
+}
+
+.esp{/*foto esp*/
+    max-width: 10%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.esp1 li{
+    list-style-type: none;
+    }
+    
+
+.esp2 li{
+list-style-type: none;
+}
+
+/*--------------------------------------------------------------- EQUIPO PRINCIPAL*/
+
+.presEq{
+    background-image: url("/Img/frente.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height:30rem;
+    color: black;
+}
+
+
+.presEq hr{
+    width: 70%;
+    margin: 0 auto;
+}
+/*---------------------------------------------------------------------------------------------FORMULARIO*/
+
+.contacto{
+    width: 80%;
+    height: 50rem;
+    padding-top: 8%;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    /* border: solid rebeccapurple; */
+}
+
+.formulario__grupo-input {
+    position: relative;
+    /* border: solid red; */
+
+
+}
+
+.formulario__input {
+    width: 80%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    border: solid black;
+
+}
+
+.formulario__input:focus {
+    border: 3px solid #c71d6f;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #c71d6f;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgb(219, 22, 144);
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------Footer-------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------Ubicación*/
+.ubicacion{
+    margin-top: 5%;
+}
+.ubicacion iframe{
+    width: 100%;
+    height: 20%;
+}
+
+
+.foot{
+    color: white;
+    background-color: black;
+    line-height: 1;
+
+}
+
+.logo_foot{
+    width: 20%;
+    height: .5%;
+
+    animation: rotate 4s infinite;
+}
+
+/*-----------------------------------------------------ANIMACION-------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes rotate {
+    25%{
+        transform: rotatey(45deg);
+    }º
+    50%{
+        transform: rotatey(90deg);
+    }75%{
+        transform: rotatey(180deg);
+    }100%{
+        transform: rotatey(360deg);
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------REDES*/
+.part{
+    margin: 0 auto;
+    padding-top: 6.5%;
+    width: 70%;
+}
+
+.redes{
+    margin: 0 auto;
+    padding-top: 6.5%;
+    width: 30%;
+}
+
+.redes h1{
+    font-size:x-large;
+}
+.redes a{
+    text-decoration: none;
+    font-size:large;
+    color: white;
+    }
+
+/*-----------------------------------------------------------------------------------------Media---------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------MEDIA 1*/
+
+@media screen and (min-width:0px) and (max-width:480px) {
+
+.cont{overflow: auto;}
+
+/*--------------------------------------------------------------------NAVEGACIÓN*/
+.etiquetas {
+    display: inline-block;
+}
+
+.logo{
+    height: 8em;
+    max-width: 8em;
+}
+.log_cuer{
+    height: 4em;
+    max-width: 4em;
+}
+/*---------------------------------------------------------------------INICIO*/
+.presentacion{
+    background-image: url("/Img/figura.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    height:20rem;
+    color: whitesmoke;
+}
+.desPres{
+    padding-top: 25%;
+}
+
+.destacados h1{
+    margin-top: -20%;
+}
+h1{font-size: 1.2rem;
+}
+h3{margin: 2% auto;font-size: .9rem
+}
+hr{width: 70%;margin: 0 auto}
+
+.desPres button{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 20px;
+    margin: 2%;
+}
+
+.desPres a{
+    text-decoration: none;
+}
+
+.wtsp{background-color: #c71d6f67;}
+.tratamiento{
+    background-color: #dfa6a3;
+}
+
+/*--------------------------------------------------------------------------TRATAMIENTOS*/
+
+
+/*----------------------------TRATAMIENTOS DESTACADOS*/
+.destacados h1{
+    padding-bottom: 8%;
+}
+
+.destacados p{
+    
+}
+
+.destc_btn button{
+    display: grid;
+    margin: 10px;
+    margin-left: 25%;
+    width: 50%;
+}
+/*----------------------------TRATAMIENTOS PRINCIPAL*/
+.pres{
+    background-image: url("/Img/espalda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    height: 18rem;
+    color: whitesmoke;
+}
+
+.pres h2{
+    padding-top: 8%;
+    font-size: medium;
+}
+
+
+.tratamientos h1{
+    padding-top: 25%;
+    padding-bottom: ;
+}
+
+.tipo_trat h1{
+    margin-bottom: 20%;
+    text-decoration: underline;
+
+}
+.tratQui,.tratNoQui {
+    display: flex;
+    overflow-x: auto;
+    gap: 10%;
+    height: 14rem;
+}
+
+
+
+/*------------------------------------------------------------------------ESPECIALISTAS----------------------------------------------------*/
+/*-------------------------------------------------------ESPECIALISTAS  INICIO*/
+
+.especialista{
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/8/62/pink-white-squares-background-geometric-abstract-shapes-abst.jpg");
+    background-size: 100% 100%;  
+}
+
+.descr p{
+    font-size: 1.2rem;
+}
+
+
+.esp1, .esp2{
+    font-size: large;
+    padding: 4.5%;
+    
+}
+
+.esp1 li{
+    color: black;    
+}
+
+.esp2 li{
+    color: black;    
+}
+
+.esp1, .esp2 h1{
+    font-size:xx-large;
+}
+
+.logo_esp{
+    height: 6em;
+    max-width: 6em;
+    margin: 0 auto;
+}
+
+.log__esp{
+    height: 6em;
+    max-width: 6em;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------ESPECIALISTA PRINCIPAL*/
+.presEq{
+    background-image: url("/Img/frente.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    height: 18rem;
+    color: whitesmoke;
+}
+
+.presEq h1{
+    padding-top: 15%;
+}
+
+/*---------------------------------------------------------FORM PRINCIPAL*/
+.contacto{
+    height:55rem;
+    color: #c71d6f;
+}
+
+.contacto h1{
+    text-decoration: underline;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+    height: 80px;
+}
+
+/*-----------------------------------------------------FOOTER*/
+
+.foot{
+    margin-top: 5%;
+}
+.logo_foot{
+    height: 8em;
+    width: 8em;
+    margin: 0 auto;
+
+} 
+
+
+.direc_foot, .redes {
+margin-top: 3%;
+}
+.horario, .redes h1{
+    font-size: 1em;
+}
+
+
+.redes p{
+    font-size:xx-large;
+}
+
+}
+/*-----------------------------------------------------------------------------------------------------MEDIA 2*/
+    
+@media screen and (min-width:481px) and (max-width:768px) {
+
+.cont{overflow: auto;}
+
+/*--------------------------------------------------------------------NAVEGACIÓN*/
+.etiquetas {
+    display: inline-block;
+    }    
+    
+.logo{
+    height: 8em;
+    max-width: 8em;
+    }    
+.log_cuer{
+    height: 4em;
+    max-width: 4em;
+    }    
+/*-------------------------------------------------------------------------INICIO*/
+.presentacion{
+    background-image: url("/Img/figura.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    height:20rem;
+    color: whitesmoke;
+}
+
+
+.desPres{
+    padding-top: 10%;
+}
+
+h1{font-size: 2rem;
+}
+h3{margin: 2% auto;font-size: .9rem
+}
+hr{width: 70%;margin: 0 auto}
+
+.desPres button{
+    height: 3rem;
+    width: 8rem;
+    margin-top: 2%;
+    border-radius: 20px;
+    margin: 2%;
+}
+
+.desPres a{
+    text-decoration: none;
+}
+
+.wtsp{background-color: #c71d6f67;}
+.tratamiento{
+    background-color: #dfa6a3;
+}
+
+/*--------------------------------------------------------------------------TRATAMIENTOS*/
+
+
+/*----------------------------TRATAMIENTOS DESTACADOS*/
+.destacados h1{
+    padding-top: -25%;
+}
+
+.destacados p{
+    
+}
+
+.destc_btn button{
+    display: grid;
+    margin: 10px;
+    margin-left: 25%;
+    width: 50%;
+}
+/*----------------------------TRATAMIENTOS PRINCIPAL*/
+.pres{
+    background-image: url("/Img/espalda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    height: 22rem;
+    color: whitesmoke;
+}
+
+.pres h2{
+    padding-top: 2%;
+    font-size: medium;
+}
+.pres h1{
+    padding-top: 25%;
+}
+
+
+
+.tipo_trat h1{
+    margin-bottom: 2%;
+    text-decoration: underline;
+
+}
+.tratQui,.tratNoQui {
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow-x: auto;
+    gap: 10%;
+    height: 14rem;
+}
+
+/*--------------------------------------------------------------------------------------------------ESPECIALISTA*/
+
+/*-------------------------------------------------------ESPECIALISTAS  INICIO*/
+
+.esp1 ul{
+    list-style: none;
+
+}
+/*---------------------------------------------------------ESPECIALISTA PRINCIPAL*/
+
+
+/*---------------------------ESPECIALISTA INICIO*/
+.especialista{
+    background-image: url("https://wallpaperaccess.com/full/1204602.png");
+    background-size: 100% 100%;  
+    height:30rem;
+    width: 100%;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr auto;
+    align-items: start;
+    }
+    
+.esp{
+    margin-top: -5%;
+    }
+.esp1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+} 
+
+.esp2{
+    grid-column: 2/3;
+    grid-row: 2/3;    
+}
+.esp1 li{
+    color: whitesmoke;    
+}
+
+.esp2 li{
+    color: whitesmoke;    
+}
+
+.esp1 h1{
+    color: whitesmoke;    
+}
+
+.esp2 h1{
+    color: whitesmoke;    
+}
+
+.esp1 ul{
+    list-style: none;
+
+}
+
+.logo_esp{
+    width: 10rem;
+    height: 10rem;
+    padding-top: 2%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+.log__esp{
+    width: 8rem;
+    height: ko8rem;
+    padding-top: 10%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+
+
+/*-----------------------------ESPECIALISTAS PRINCIPAL*/
+.presEq{
+    background-image: url("/Img/frente.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    height: 20rem;
+    color: whitesmoke;
+}
+.logo_esp{
+    height: 6em;
+    max-width: 6em;
+    grid-column: 1/3;
+    margin: 0 auto;
+}
+
+.log_cuer{
+    height: 6em;
+    max-width: 6em;
+    grid-column: 1/3;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+
+.esp1,.esp2{
+    margin-top: 20%;
+}
+.presEq h1{
+    padding-top: 11%;
+}
+
+.especialista{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 8em auto;
+    }
+
+/*---------------------------------------------------------FORM PRINCIPAL*/
+.contacto{
+    height:55rem;
+    color: #c71d6f;
+}
+
+.contacto h1{
+    text-decoration: underline;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+    height: 80px;
+}
+
+/*---------------------------------------------------Footer*/ 
+
+.foot{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto ;
+
+    overflow: auto;
+    row-gap: 10px;
+}
+
+.logo_foot{
+    margin: 5% auto;
+    height: 80%;
+    width: 80%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+
+}
+
+.ubicacion{
+    grid-column:1/3;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.direccion{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 100%;    
+}
+
+.redes{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
+    margin-top: -4%;
+    margin-bottom: 5%;
+
+}
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------MEDIA 3*/
+    
+@media screen and (min-width:769px) {
+
+
+/*--------------------------------------------------------------------NAVEGACIÓN*/
+.nav {
+    /* background-color: red; */
+    display: flex;
+}
+
+/*--------------------------------------------------------------------------INICIO*/
+.presentacion{
+    background-image: url("/Img/figura.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    height:18rem;
+    color: whitesmoke;
+
+    padding-top: 10%;
+}
+
+.desPres button{
+    height: 3rem;
+    width: 8rem;
+    margin-top: 2%;
+    border-radius: 20px;
+    margin: 4%;
+}
+
+.desPres a{
+    text-decoration: none;
+}
+
+.wtsp{background-color: #c71d6f67;}
+.tratamiento{
+    background-color: #dfa6a3;
+}
+
+/*--------------------------------------------------------------------------TRATAMIENTOS*/
+
+
+/*----------------------------TRATAMIENTOS DESTACADOS*/
+.destacados h1{
+    padding-top: -25%;
+}
+
+.destc_btn button{
+    display: grid;
+    margin: 10px;
+    margin-left: 25%;
+    width: 50%;
+    height: 2rem;
+    padding-top: .3%;
+}
+/*----------------------------TRATAMIENTOS PRINCIPAL*/
+.pres{
+    background-image: url("/Img/espalda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    height:30rem;
+    color: whitesmoke;
+}
+
+.pres h2{
+    padding-top: 2%;
+    font-size: medium;
+}
+.pres h1{
+    padding-top: 18%;
+}
+
+
+
+.tipo_trat h1{
+    margin-bottom: 2%;
+    text-decoration: underline;
+
+}
+.tratQui{
+    display: flex;
+    justify-content: center;
+}
+.tratNoQui{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4%;
+    height: 40rem;
+}
+
+#t11{
+    grid-column: 2;
+}
+
+
+/*------------------------------------------------------------------------------ESPECIALISTAS*/
+
+
+/*--------------------------------------------------------------- EQUIPO PRINCIPAL*/
+
+.presEq{
+    background-image: url("/Img/frente.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height:30rem;
+    color: whitesmoke;
+}
+
+.presEq h1{
+    padding-top: 12%;
+}
+
+
+.especialista{
+    background-image: url("https://wallpaperaccess.com/full/2273491.jpg");
+    background-size: 100% 100%;  
+    height:45rem;
+    width: 100%;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    }
+
+
+.esp1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-top:50%;
+}
+.esp2{
+    grid-column: 3/4;
+    grid-row: 2/4;  
+    padding-top:30%;
+
+}
+
+.esp1 li{
+    color: black;    
+}
+
+.esp2 li{
+    color: black;    
+}
+
+.esp1 ul{
+    list-style: none;
+
+}
+
+.logo_esp{
+    max-width: 10em;
+    max-height: 10em;
+    margin: 0 auto;
+    padding-top: 6%;
+    grid-column: 2/3;
+    grid-row:2/3 ;
+}
+
+.log__esp{
+    max-width: 10em;
+    max-height: 10em;
+    margin: 0 auto;
+    padding-top: 6%;
+    grid-column: 2/3;
+    grid-row:2/3 ;
+}
+
+/*---------------------------------------------------------FORM PRINCIPAL*/
+.contacto{
+    height:40rem;
+    color: #c71d6f;
+}
+
+.contacto h1{
+    text-decoration: underline;
+    padding-bottom: 3rem;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+    height: 80px;
+}
+
+
+
+/*---------------------------------------------------FOOTER*/ 
+
+.foot{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto  ;
+    height: 35em;
+}
+
+.logo_foot{
+    margin: 5% auto;
+    height: 60%;
+    width: 40%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+}
+
+.ubicacion{
+    grid-column:1/4;
+    grid-row: 1/2;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.direccion{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 100%;    
+    padding-top: 12%;
+}
+
+.redes{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 100%;
+    padding-top: 20%;
+    margin-bottom: 5%;
+
+}
+
+.direc_foot{
+}
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------MEDIA 4*/
+    
+@media screen and (min-width:1440px) and (max-width:2560px) {
+
+
+    /*--------------------------------------------------------------------NAVEGACIÓN*/
+    .nav {
+        /* background-color: red; */
+        display: flex;
+    }
+    
+    /*--------------------------------------------------------------------------INICIO*/
+
+    .logo{
+        margin-left: -20%;
+    }
+
+    .presentacion{
+        background-image: url("/Img/figura.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;  
+        height:18rem;
+        color: whitesmoke;
+    
+        padding-top: 10%;
+    }
+    
+    .desPres button{
+        height: 3rem;
+        width: 8rem;
+        margin-top: 2%;
+        border-radius: 20px;
+        margin: 4%;
+    }
+    
+    .desPres a{
+        text-decoration: none;
+    }
+    
+    .wtsp{background-color: #c71d6f67;}
+    .tratamiento{
+        background-color: #dfa6a3;
+    }
+    
+    /*--------------------------------------------------------------------------TRATAMIENTOS*/
+    
+    
+    /*----------------------------TRATAMIENTOS DESTACADOS*/
+    .destacados h1{
+        padding-top: -25%;
+    }
+    
+    .destc_btn button{
+        display: grid;
+        margin: 10px;
+        margin-left: 25%;
+        width: 50%;
+        height: 4rem;
+        text-align: center;
+        padding-top: .7%;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    /*----------------------------TRATAMIENTOS PRINCIPAL*/
+    .pres{
+        background-image: url("/Img/espalda.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;  
+        height:30rem;
+        color: whitesmoke;
+    }
+    
+    .pres h2{
+        padding-top: 2%;
+        font-size: medium;
+    }
+    .pres h1{
+        padding-top: 18%;
+    }
+    
+    
+    
+    .tipo_trat h1{
+        margin-bottom: 2%;
+        text-decoration: underline;
+    
+    }
+    .tratQui{
+        display: flex;
+        justify-content: center;
+    }
+    .tratNoQui{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 4%;
+        height: 40rem;
+    }
+    
+    #t11{
+        grid-column: 2;
+    }
+    
+    
+    /*------------------------------------------------------------------------------ESPECIALISTAS*/
+    
+    
+    /*--------------------------------------------------------------- EQUIPO PRINCIPAL*/
+    
+    .presEq{
+        background-image: url("/Img/frente.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height:30rem;
+        color: whitesmoke;
+    }
+    
+    .presEq h1{
+        padding-top: 12%;
+    }
+    
+    
+    .especialista{
+        background-image: url("https://wallpaperaccess.com/full/2273491.jpg");
+        background-size: 100% 100%;  
+        height:60rem;
+        width: 100%;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        }
+    
+    
+    .esp1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-top:22%;
+    }
+    .esp2{
+        grid-column: 3/4;
+        grid-row: 2/4;  
+    
+    }
+    
+    .esp1 li{
+        color: black;    
+    }
+    
+    .esp2 li{
+        color: black;    
+    }
+    
+    .esp1 ul{
+        list-style: none;
+    
+    }
+    
+    .log__esp{
+        max-width: 10em;
+        max-height: 10em;
+        margin: 0 auto;
+        padding-top: 6%;
+        grid-column: 2/3;
+        grid-row:2/3 ;
+    }
+    
+    /*---------------------------------------------------------FORM PRINCIPAL*/
+    .contacto{
+        height:40rem;
+        color: #c71d6f;
+    }
+    
+    .contacto h1{
+        text-decoration: underline;
+        padding-bottom: 3rem;
+    }
+    
+    .formulario__mensaje-activo {
+        display: block;
+        height: 80px;
+    }
+    
+    
+    
+    /*---------------------------------------------------FOOTER*/ 
+    
+    .foot{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto  ;
+        height: 35em;
+    }
+    
+    .logo_foot{
+        margin: 5% auto;
+        height: 60%;
+        width: 40%;
+        grid-column: 1/2;
+        grid-row: 2/4;
+    
+    }
+    
+    .ubicacion{
+        grid-column:1/4;
+        grid-row: 1/2;
+        width: 100%;
+        margin-top: 0%;
+    }
+    
+    .direccion{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        width: 100%;    
+        padding-top: 12%;
+    }
+    
+    .redes{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 100%;
+        padding-top: 20%;
+        margin-bottom: 5%;
+    
+    }
+    
+    .direc_foot{
+    }
+    
+    }
+    
+    
+    
